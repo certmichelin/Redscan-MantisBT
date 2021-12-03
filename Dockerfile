@@ -45,5 +45,6 @@ COPY config_inc.php /var/www/html/config/config_inc.php
 
 COPY ./mantis-entrypoint /usr/local/bin/mantis-entrypoint
 RUN dos2unix /usr/local/bin/mantis-entrypoint
+RUN chmod +x /usr/local/bin/mantis-entrypoint
 
 CMD ["mantis-entrypoint"]
