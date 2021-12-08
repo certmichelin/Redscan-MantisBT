@@ -11,5 +11,8 @@ $g_return_path_email     = getenv('EMAIL_RETURN_PATH') !== false ? getenv('EMAIL
 $g_path                  = getenv('BASE_URL') !== false ? getenv('BASE_URL') : "https://localhost/mantisbt/";
 $g_short_path            = getenv('SHORT_PATH') !== false ? getenv('SHORT_PATH') : "/mantisbt/";
 
+//Customize severity.
+$g_severity_enum_string  = '1:Critical,2:High,3:Medium,4:Low,5:Info';
+
 include 'config_inc_addon.php';
 ?>
